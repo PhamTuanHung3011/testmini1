@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+
+<hr>
+<label > <input id="aa1" size="30" placeholder="Nhap canh A"></label>
+<button id="click1" type="button" onclick="cauA()"> Button </button>
+<p id="dapanA"></p>
+<p id="dapanB"></p>
+<hr>
+
+<label > <input id="aa2" size="30" placeholder="so thu nhat"></label>
+<label > <input id="aa3" size="30" placeholder="so thu 2"></label>
+<button id="click2" type="button" onclick="cauB()"> Button1 </button>
+<p id="dapanC"></p>
+<p id="dapanD"></p>
+
+
+
+<script>
+
+    function cau1(){
+
+        document.getElementById('dapan1').innerHTML=
+    }
+
+function cauA(){
+        let canhA = document.getElementById('aa1').value;
+        let chuvi = canhA + canhA;
+        let dientich = canhA * canhA;
+
+        document.getElementById('dapanA').innerHTML ='Chu vi cua hinh vuong la: '+ chuvi;
+        document.getElementById('dapanB').innerHTML= 'Dien tich hinh vuong la '+ dientich
+}
+function cauB(){
+        let so1 = document.getElementById('aa2').value;
+        let so2 = document.getElementById('aa3'). value;
+        let tichA = so1*2;
+        let tichB = so1*so2;
+        document.getElementById('dapanC').innerHTML = 'Binh phuong so thu nhat la: '+ tichA;
+        document.getElementById('dapanD').innerHTML='a^b co gia tri la: '+ tichB;
+}
+</script>
+</body>
+</html>

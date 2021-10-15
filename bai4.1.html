@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label > <input id="canhA" size="20" placeholder="nhap canh A"></label><br>
+<label > <input id="canhB" size="20" placeholder="nhap canh B"></label><br>
+<label > <input id="canhC" size="20" placeholder="nhap canh C"></label>
+<button id="hienthi" type="button" onclick="hienthi2()"> button 2</button>
+
+<p id="hienthitamgiac"></p>
+<p></p>
+<p></p>
+
+<script>
+
+    function hienthi2() {
+        let canh1 = document.getElementById('canhA').value;
+        let canh2 = document.getElementById('canhB').value;
+        let canh3 = document.getElementById('canhC').value;
+
+        if (Math.abs(canh2 - canh3) < canh1 < (canh2 + canh3)) {
+            document.getElementById('hienthitamgiac').innerHTML = 'La tam giac';
+        }
+    }
+
+
+
+</script>
+
+</body>
+</html>

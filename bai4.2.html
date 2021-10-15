@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label > <input id="canhA" size="20" placeholder="nhap canh A"></label><br>
+<label > <input id="canhB" size="20" placeholder="nhap canh B"></label><br>
+<label > <input id="canhC" size="20" placeholder="nhap canh C"></label>
+<button id="hienthi" type="button" onclick="hienthi3()"> button 3</button>
+
+<p id="hienthitamgiac"></p>
+
+
+<script>
+
+    function hienthi3() {
+        let canh1 = document.getElementById('canhA').value;
+        let canh2 = document.getElementById('canhB').value;
+        let canh3 = document.getElementById('canhC').value;
+
+        if (canh1 === canh2 &&  canh1 === canh3) {
+            if( canh2 === canh3){
+                document.getElementById('hienthitamgiac').innerHTML = 'La tam giac deu';
+            } else {
+                document.getElementById('hienthitamgiac').innerHTML = 'Khong la tam giac deu';
+            }
+        }else {
+            document.getElementById('hienthitamgiac').innerHTML = 'Khong la tam giac can';
+        }
+    }
+
+
+
+</script>
+
+</body>
+</html>
